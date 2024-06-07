@@ -58,7 +58,7 @@ Airflow vscode (windows) to run with wsl mode
         wsl --install
         ```
    b. Change the default Linux distribution installed
-       ```bash
+        ```bash
         wsl --install -d <Distribution Name>
         ```
        OR
@@ -78,6 +78,9 @@ Airflow vscode (windows) to run with wsl mode
    - Make sure you are in your working directory
    - Right click any empty space and open in terminal or powershell
    - enter wsl mode
+     ```bash
+        hey
+     ```
      ```bash
      code .
      ```
