@@ -49,49 +49,55 @@ The project is designed with the following components:
 ## Getting Started
 
 I am using Windows for this project :
-Airflow vscode (windows) to run with wsl mode
+
+Airflow requires vscode (windows) to run with wsl mode
 
 1. Setting up the enviroment for Windows:
    Using linux distribution : Ubuntu
+   
    a. Installing ubuntu
-        ```bash
-        wsl --install
         ```
+        wsl --install
+        ``` 
+   
    b. Change the default Linux distribution installed
-        ```bash
+        ```
         wsl --install -d <Distribution Name>
         ```
-       OR
-   
-       ```bash
-        wsl --set-default <DistributionName>
-        ```
+      OR ```
+      wsl --set-default <DistributionName>
+         ```
 
-   Replace <Distribution Name> with the name of the distribution you would like to install.
+   Replace ```<Distribution Name>``` with the name of the distribution you would like to install.
+   
    [Official WSL Documentation](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 3. Setup Visual Studio Code:
+   
    [Download VS Code Official](https://code.visualstudio.com/)
 
    After installation :
    - Create a folder whereby you will be storing your project
    - Make sure you are in your working directory
    - Right click any empty space and open in terminal or powershell
-   - enter wsl mode
-     ```bash
-        hey
-     ```
-     ```bash
-     code .
-     ```
-     
-   use wsl:ubuntu run the following command to launch VS code
+   - enter wsl mode ```wsl```
+   - Create VS code in WSL :  ```code .```
+   
+4. Setting up venv in VS code:
+   Click terminal and open terminal
    
    ```bash
-   code .
+   python3 -m ven .venv
    ```
+   
+6. Installing apache airflow
+   ```bash
+   pip install apche-airflow
+   ```
+   
 
-5. Run Docker Compose to spin up the services:
+
+8. Run Docker Compose to spin up the services:
     ```bash
     docker-compose up
     ```
