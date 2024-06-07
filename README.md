@@ -90,14 +90,20 @@ Airflow requires vscode (windows) to run with wsl mode
    python3 -m ven .venv
    ```
    
-6. Installing apache airflow
+5. Installing dependancy
+   - apache airflow
    ```bash
-   pip install apche-airflow
+   pip install apache-airflow
    ```
-   
-
-
-8. Run Docker Compose to spin up the services:
+   - kafka
+   ```bash
+   pip install kafka-python
+   ```
+   - cassandra
+   ```bash
+   pip install cassandra-driver
+   ``` 
+6. Run Docker Compose to spin up the services:
     ```bash
     docker-compose up
     ```
